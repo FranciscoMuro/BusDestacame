@@ -4,22 +4,22 @@ from choferes.models import Chofer
 from pasajeros.models import Pasajero
 from trayectos.models import Trayecto
 
-class AtobusSerializer(serializers.modelSerializer):
+class AtobusSerializer(serializers.ModelSerializer):
     class Meta:
         model=Autobus
-        fields=('busId', 'Chofer', 'trayecto')
+        fields=('busId', 'chofer', 'trayecto', 'fecha_salida', 'hora_salida')
 
-class ChoferSerializer(serializers.modelSerializer):
+class ChoferSerializer(serializers.ModelSerializer):
     class Meta:
         model=Chofer
         fields=('choferId', 'nombre')
 
-class PasajeroSerializer(serializers.modelSerializer):
+class PasajeroSerializer(serializers.ModelSerializer):
     class Meta:
         model=Pasajero
-        fields=('pasajeroId', 'nombre')
+        fields=('pasajeroId', 'nombre', 'autobus')
 
-class TrayectoSerializer(serializers.modelSerializer):
+class TrayectoSerializer(serializers.ModelSerializer):
     class Meta:
         model=Trayecto
-        fields=('trayectoId', 'choferId', 'origen', 'destino', 'fecha_hora_salida')
+        fields=('trayectoId', 'origen', 'destino')

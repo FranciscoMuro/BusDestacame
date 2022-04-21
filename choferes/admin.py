@@ -1,3 +1,5 @@
 from django.contrib import admin
+# Models
+from .models import Chofer
 
-# Register your models here.
+admin.site.register(Chofer)

@@ -1,3 +1,6 @@
 from django.contrib import admin
 
-# Register your models here.
+# Model
+from .models import Trayecto
+
+admin.site.register(Trayecto)
