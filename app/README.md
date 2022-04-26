@@ -1,4 +1,4 @@
-# appfront
+# app
 
 ## Project setup
 ```
