@@ -26,8 +26,10 @@ virtualenv mi_entornovirual
 ```
 deactivate
 ```
-### 7.- Una vez que tengamos el virtualenv activado ejecutamos para instalar las dependencias del proyecto en el back:
+### 7.- Una vez que tengamos el virtualenv activado ejecutamos para instalar las dependencias del proyecto en el back dentro de la carpeta del proyecto:
 ```
+cd BusDestacame/
+
 pip3 install -r requirements.txt
 ```
 ### 8.- Debemos ejecutar las migraciones:
