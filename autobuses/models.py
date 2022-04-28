@@ -8,6 +8,7 @@ class Autobus(models.Model):
     trayecto = models.ForeignKey(Trayecto, verbose_name="Chofer del autobus", on_delete=models.CASCADE)
     fecha_salida = models.DateField()
     hora_salida = models.TimeField()
+    procentajeDePasajeros = models.IntegerField(verbose_name='Porcentaje de pasajeros por autobus', default=0)
 
     def __str__(self):
         return str(self.chofer)+': '+str(self.trayecto)

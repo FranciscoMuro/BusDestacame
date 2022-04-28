@@ -10,9 +10,9 @@ from autobuses.models import Autobus
 
 @csrf_exempt
 def obtenerAutobuses(request):
-    autobuses = Autobus.objects.all();
+    autobuses = Autobus.objects.all()
     autobus_serializer=AtobusSerializer(autobuses, many=True)
-    return JsonResponse(autobus_serializer.data, safe=False);
+    return JsonResponse(autobus_serializer.data, safe=False)
 
 
 @csrf_exempt
@@ -38,4 +38,4 @@ def actualizarAutobus(request, pk):
 def eliminarAutobus(request, pk):
     autobus = Autobus.objects.get(busId = pk)
     autobus.delete()
-    return JsonResponse("El autobus eliminado exitosamente", safe=False)
+    return JsonResponse("El autobus fue eliminado exitosamente", safe=False)

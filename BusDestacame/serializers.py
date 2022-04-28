@@ -7,7 +7,7 @@ from trayectos.models import Trayecto
 class AtobusSerializer(serializers.ModelSerializer):
     class Meta:
         model=Autobus
-        fields=('busId', 'chofer', 'trayecto', 'fecha_salida', 'hora_salida')
+        fields=('busId', 'chofer', 'trayecto', 'fecha_salida', 'hora_salida', 'procentajeDePasajeros')
 
 class ChoferSerializer(serializers.ModelSerializer):
     class Meta:

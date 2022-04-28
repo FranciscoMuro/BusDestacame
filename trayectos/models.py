@@ -1,5 +1,4 @@
 from django.db import models
-from choferes.models import Chofer
 
 # Create your models here.
 class Trayecto(models.Model):
