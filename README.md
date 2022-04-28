@@ -53,7 +53,7 @@ http://127.0.0.1:8000/
 - Veremos esta pagina:
 ![Image text](DocsImg/dajngo-corriendo.png)
 #
-# Para correr el proyecto frontend que se encuentra dentro de la carptea app
+# Para correr el proyecto frontend que se encuentra dentro de la carptea app y debemos tener el paquete nvm de node o node instalados.
 
 ### Debemos tener corriendo en paralelo el proyecto de Django (BACK) y el proyecto de Vue (front) asi que debemos tener dos consolas abiertas.
 
