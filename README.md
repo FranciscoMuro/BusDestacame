@@ -1,9 +1,9 @@
 #
-# Primero para correr el pryecto back end debemos instalar python3
+# Primero para correr el proyecto back end debemos instalar python3
 
 ### 1.- Para instalarlo en windows debemos ir a la pagina oficial y descargar el instalador
 ### 2.- Para instalarlo en linux/unix debemos correr el comando recomendado para cada distro.
-### 3.- Intalar Pip3 en el respencivo ambiente.
+### 3.- Intalar Pip3 en el respectivo ambiente.
 
 ### 4.- Al instalar pip3 debemos instalar el virtualenv de pip3
 ```
